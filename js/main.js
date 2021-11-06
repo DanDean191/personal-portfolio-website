@@ -5,10 +5,9 @@ mobileMenuBtn.addEventListener('click', () => {
 });
 
 //Dark mode toggle
-const darkModeBtn = document.querySelector('#darkMode');
+const darkModeBtn = document.querySelector('#dark-mode-btn');
 darkModeBtn.addEventListener('click', () => {
-
-    darkModeBtn.classList.toggle('toggle-on');
-        
-    document.body.classList.toggle('mobile-menu-open')
+    document.body.classList.toggle('dark-mode');
+    darkModeBtn.childNodes[3].classList.toggle('toggle-on');
 });
+
