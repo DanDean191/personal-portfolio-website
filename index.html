@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daniel Dean's Portfolio - Home</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/bf8eac5cdc.js" crossorigin="anonymous"></script>
     <script src="js/main.js" defer></script>
     
 </head>
 <body>
     <header>
         <div class="logo">
-            <i class="fab fa-html5"></i>
+            <a href="#hero">
+                <i class="fab fa-html5"></i>
+            </a>
         </div>
         <button id="mobile-menu-btn" value="">
             <p>MENU</p>
@@ -21,10 +23,10 @@
         </button>
         <nav class="nav-menu">
             <ul>
-                <li>About Me</li>
-                <li>Projects</li>
-                <li>Skills</li>
-                <li>Contact</li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li>
                     <div id="dark-mode-btn" class="toggle">
                         <i class="dark-mode-icons fas fa-sun"></i>
@@ -36,23 +38,24 @@
         </nav>
     </header>
     <main>
-        <section id="hero">
+        <section class="anchor" id="hero">
             <h1>Daniel Dean</h1>
             <h2>Welcome to My Portfolio</h2>
+            <a href="#about"><div class="pill-btn">Start</div></a>
         </section>
 
-        <section id="about-me">
+        <section class="anchor" id="about">
             <h2>About Me</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt laudantium, dicta maiores provident perspiciatis alias deserunt nemo, natus iusto exercitationem possimus libero accusantium reprehenderit ipsam repudiandae optio, labore corporis dignissimos?</p>
         </section>
 
-        <section id="projects">
+        <section class="anchor" id="projects">
             <h2>Projects</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, perferendis.</p>
         </section>
         
 
-        <section id="skills">
+        <section class="anchor" id="skills">
             <h2>Skills</h2>
             <div id="skills-container">
               <i class="fab fa-html5"></i>
@@ -65,6 +68,10 @@
               <i class="fab fa-node"></i>
               <i class="fab fa-github"></i>
             </div>
+        </section>
+
+        <section class="anchor" id="contact">
+            <h2>Contact</h2>
         </section>
         <footer>
             <h3>Created by Dan Dean</h3>
